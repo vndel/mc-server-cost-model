@@ -1,0 +1,13 @@
+currency: USD
+billing-month-hours: 730
+headroom:
+  target-utilization: 0.65
+  n-plus-one: true
+components:
+  proxy-node: { quantity: 2, monthly-unit-cost: 24 }
+  game-node: { quantity: 4, monthly-unit-cost: 96 }
+  redis: { quantity: 1, monthly-unit-cost: 18 }
+  backup-storage-gib: { quantity: 500, monthly-unit-cost: 0.025 }
+assumptions:
+  players-per-game-node: null
+  egress-gib: null
